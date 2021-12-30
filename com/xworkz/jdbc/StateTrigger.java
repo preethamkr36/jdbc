@@ -15,11 +15,17 @@ public class StateTrigger {
 		StateDao dao = new StateDao();
 
 		for (int i = 0; i < dto.length; i++) {
-			System.out.println(dao.save(dto[i]));
+			// System.out.println(dao.save(dto[i]));
 		}
 
 		for (int i = 0; i < dto.length; i++) {
-			//System.out.println(dao.delete(dto[i].getId()));
+			// System.out.println(dao.delete(dto[i].getId()));
 		}
+
+		dao.display(1);
+
+		dao.displayAll();
+
+		dao.getCount();
 	}
 }
